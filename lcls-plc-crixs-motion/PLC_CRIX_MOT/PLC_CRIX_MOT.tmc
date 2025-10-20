@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{85E0E65E-D7B7-47BB-D84A-3962F67CCFFF}" GeneratedBy="TwinCAT XAE Plc">
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{C0C174EF-78C7-E2C9-1293-FE3016979684}" GeneratedBy="TwinCAT XAE Plc">
   <DataTypes>
     <DataType>
       <Name Namespace="LCLS_General">ST_System</Name>
@@ -35024,221 +35024,6 @@ These features efficiently address the addition, removal, and verification of be
       </Properties>
     </DataType>
     <DataType>
-      <Name Namespace="LCLS_General">FB_AnalogOutput</Name>
-      <BitSize>576</BitSize>
-      <SubItem>
-        <Name>fReal</Name>
-        <Type>LREAL</Type>
-        <Comment> The real value to send to the output</Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>64</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fSafeMax</Name>
-        <Type>LREAL</Type>
-        <Comment> The maximum allowed real value for the connected hardware</Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>128</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fSafeMin</Name>
-        <Type>LREAL</Type>
-        <Comment> The minimum allowed real value for the connected hardware</Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>192</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>iTermBits</Name>
-        <Type>UINT</Type>
-        <Comment> The number of bits correlated with the terminal's max output. This is not necessarily the resolution parameter.</Comment>
-        <BitSize>16</BitSize>
-        <BitOffs>256</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fTermMax</Name>
-        <Type>LREAL</Type>
-        <Comment> The fReal value correlated with the terminal's max output</Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>320</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fTermMin</Name>
-        <Type>LREAL</Type>
-        <Comment> The fReal value correlated with the terminal's min output</Comment>
-        <BitSize>64</BitSize>
-        <BitOffs>384</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>iRaw</Name>
-        <Type>INT</Type>
-        <Comment> Connect this output to the terminal</Comment>
-        <BitSize>16</BitSize>
-        <BitOffs>448</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Output</Value>
-          </Property>
-          <Property>
-            <Name>TcAddressType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fScale</Name>
-        <Type>LREAL</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>512</BitOffs>
-      </SubItem>
-      <Properties>
-        <Property>
-          <Name>PouType</Name>
-          <Value>FunctionBlock</Value>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
-      <Name Namespace="LCLS_General">FB_LED</Name>
-      <BitSize>1408</BitSize>
-      <SubItem>
-        <Name>ledName</Name>
-        <Type>STRING(80)</Type>
-        <BitSize>648</BitSize>
-        <BitOffs>32</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: NAME
-        io: io
-        field: DESC Descriptive name for the LED
-        autosave_pass0: VAL DESC
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>iTermBits</Name>
-        <Type>UINT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>688</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fIlluminatorPercent</Name>
-        <Type>LREAL</Type>
-        <BitSize>64</BitSize>
-        <BitOffs>704</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: ILL:PCT
-        field: EGU %
-    </Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>bLedPower</Name>
-        <Type>BOOL</Type>
-        <BitSize>8</BitSize>
-        <BitOffs>768</BitOffs>
-        <Properties>
-          <Property>
-            <Name>ItemType</Name>
-            <Value>Input</Value>
-          </Property>
-          <Property>
-            <Name>pytmc</Name>
-            <Value>
-        pv: PWR
-        field: ZNAM OFF
-        field: ONAM ON
-    </Value>
-          </Property>
-          <Property>
-            <Name>TcAddressType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>iIlluminatorINT</Name>
-        <Type>INT</Type>
-        <BitSize>16</BitSize>
-        <BitOffs>784</BitOffs>
-        <Properties>
-          <Property>
-            <Name>TcAddressType</Name>
-            <Value>Output</Value>
-          </Property>
-        </Properties>
-      </SubItem>
-      <SubItem>
-        <Name>fbSetIllPercent</Name>
-        <Type Namespace="LCLS_General">FB_AnalogOutput</Type>
-        <BitSize>576</BitSize>
-        <BitOffs>832</BitOffs>
-      </SubItem>
-      <Properties>
-        <Property>
-          <Name>PouType</Name>
-          <Value>FunctionBlock</Value>
-        </Property>
-      </Properties>
-    </DataType>
-    <DataType>
       <Name Namespace="PMPS">ST_DbStateParams</Name>
       <BitSize>2496</BitSize>
       <SubItem>
@@ -35493,6 +35278,221 @@ These features efficiently address the addition, removal, and verification of be
         <BitSize>32</BitSize>
         <BitOffs>64</BitOffs>
       </SubItem>
+    </DataType>
+    <DataType>
+      <Name Namespace="LCLS_General">FB_AnalogOutput</Name>
+      <BitSize>576</BitSize>
+      <SubItem>
+        <Name>fReal</Name>
+        <Type>LREAL</Type>
+        <Comment> The real value to send to the output</Comment>
+        <BitSize>64</BitSize>
+        <BitOffs>64</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>fSafeMax</Name>
+        <Type>LREAL</Type>
+        <Comment> The maximum allowed real value for the connected hardware</Comment>
+        <BitSize>64</BitSize>
+        <BitOffs>128</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>fSafeMin</Name>
+        <Type>LREAL</Type>
+        <Comment> The minimum allowed real value for the connected hardware</Comment>
+        <BitSize>64</BitSize>
+        <BitOffs>192</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>iTermBits</Name>
+        <Type>UINT</Type>
+        <Comment> The number of bits correlated with the terminal's max output. This is not necessarily the resolution parameter.</Comment>
+        <BitSize>16</BitSize>
+        <BitOffs>256</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>fTermMax</Name>
+        <Type>LREAL</Type>
+        <Comment> The fReal value correlated with the terminal's max output</Comment>
+        <BitSize>64</BitSize>
+        <BitOffs>320</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>fTermMin</Name>
+        <Type>LREAL</Type>
+        <Comment> The fReal value correlated with the terminal's min output</Comment>
+        <BitSize>64</BitSize>
+        <BitOffs>384</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>iRaw</Name>
+        <Type>INT</Type>
+        <Comment> Connect this output to the terminal</Comment>
+        <BitSize>16</BitSize>
+        <BitOffs>448</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Output</Value>
+          </Property>
+          <Property>
+            <Name>TcAddressType</Name>
+            <Value>Output</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>fScale</Name>
+        <Type>LREAL</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>512</BitOffs>
+      </SubItem>
+      <Properties>
+        <Property>
+          <Name>PouType</Name>
+          <Value>FunctionBlock</Value>
+        </Property>
+      </Properties>
+    </DataType>
+    <DataType>
+      <Name Namespace="LCLS_General">FB_LED</Name>
+      <BitSize>1408</BitSize>
+      <SubItem>
+        <Name>ledName</Name>
+        <Type>STRING(80)</Type>
+        <BitSize>648</BitSize>
+        <BitOffs>32</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+        pv: NAME
+        io: io
+        field: DESC Descriptive name for the LED
+        autosave_pass0: VAL DESC
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>iTermBits</Name>
+        <Type>UINT</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>688</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>fIlluminatorPercent</Name>
+        <Type>LREAL</Type>
+        <BitSize>64</BitSize>
+        <BitOffs>704</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+        pv: ILL:PCT
+        field: EGU %
+    </Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>bLedPower</Name>
+        <Type>BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>768</BitOffs>
+        <Properties>
+          <Property>
+            <Name>ItemType</Name>
+            <Value>Input</Value>
+          </Property>
+          <Property>
+            <Name>pytmc</Name>
+            <Value>
+        pv: PWR
+        field: ZNAM OFF
+        field: ONAM ON
+    </Value>
+          </Property>
+          <Property>
+            <Name>TcAddressType</Name>
+            <Value>Output</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>iIlluminatorINT</Name>
+        <Type>INT</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>784</BitOffs>
+        <Properties>
+          <Property>
+            <Name>TcAddressType</Name>
+            <Value>Output</Value>
+          </Property>
+        </Properties>
+      </SubItem>
+      <SubItem>
+        <Name>fbSetIllPercent</Name>
+        <Type Namespace="LCLS_General">FB_AnalogOutput</Type>
+        <BitSize>576</BitSize>
+        <BitOffs>832</BitOffs>
+      </SubItem>
+      <Properties>
+        <Property>
+          <Name>PouType</Name>
+          <Value>FunctionBlock</Value>
+        </Property>
+      </Properties>
     </DataType>
     <DataType>
       <Name Namespace="lcls_twincat_motion">DUT_MotionStage</Name>
@@ -43442,7 +43442,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>648668096</BitOffs>
+            <BitOffs>648717248</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_FiberLite.bLedOutput1.iIlluminatorINT</Name>
@@ -43454,7 +43454,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>648668112</BitOffs>
+            <BitOffs>648717264</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_FiberLite.bLedOutput1.fbSetIllPercent.iRaw</Name>
@@ -43467,7 +43467,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>648668608</BitOffs>
+            <BitOffs>648717760</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_FiberLite.bLedOutput2.bLedPower</Name>
@@ -43487,7 +43487,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>648669504</BitOffs>
+            <BitOffs>648718656</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_FiberLite.bLedOutput2.iIlluminatorINT</Name>
@@ -43499,7 +43499,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>648669520</BitOffs>
+            <BitOffs>648718672</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_FiberLite.bLedOutput2.fbSetIllPercent.iRaw</Name>
@@ -43512,7 +43512,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>648670016</BitOffs>
+            <BitOffs>648719168</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_FiberLite.bLedOutput3.bLedPower</Name>
@@ -43532,7 +43532,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>648670912</BitOffs>
+            <BitOffs>648720064</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_FiberLite.bLedOutput3.iIlluminatorINT</Name>
@@ -43544,7 +43544,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>648670928</BitOffs>
+            <BitOffs>648720080</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_FiberLite.bLedOutput3.fbSetIllPercent.iRaw</Name>
@@ -43557,7 +43557,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>648671424</BitOffs>
+            <BitOffs>648720576</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_FiberLite.bLedOutput4.bLedPower</Name>
@@ -43577,7 +43577,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>648672320</BitOffs>
+            <BitOffs>648721472</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_FiberLite.bLedOutput4.iIlluminatorINT</Name>
@@ -43589,7 +43589,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>648672336</BitOffs>
+            <BitOffs>648721488</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_FiberLite.bLedOutput4.fbSetIllPercent.iRaw</Name>
@@ -43602,7 +43602,7 @@ These features efficiently address the addition, removal, and verification of be
                 <Value>Output</Value>
               </Property>
             </Properties>
-            <BitOffs>648672832</BitOffs>
+            <BitOffs>648721984</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_Illumination.fbILMXStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
@@ -52022,6 +52022,21 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
             <BitOffs>648665600</BitOffs>
           </Symbol>
           <Symbol>
+            <Name>GVL.xOverride</Name>
+            <Comment> Global override of motion safety settings.</Comment>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Default>
+              <Value>0</Value>
+            </Default>
+            <Properties>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>648666248</BitOffs>
+          </Symbol>
+          <Symbol>
             <Name>GVL_FiberLite.FZP_TXAS_LED_01</Name>
             <Comment>
     addding two digital outputs to be used for FZP-TXAS led control
@@ -52046,7 +52061,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648666248</BitOffs>
+            <BitOffs>648666256</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_FiberLite.FZP_TXAS_LED_02</Name>
@@ -52064,21 +52079,6 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
         io: io
 </Value>
               </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>648666256</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL.xOverride</Name>
-            <Comment> Global override of motion safety settings.</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Default>
-              <Value>0</Value>
-            </Default>
-            <Properties>
               <Property>
                 <Name>TcVarGlobal</Name>
               </Property>
@@ -52102,95 +52102,6 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
             <BitSize>640</BitSize>
             <BaseType>FB_CheckEPS</BaseType>
             <BitOffs>648666688</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_FiberLite.bLedOutput1</Name>
-            <Comment>Fiber-Lite Control</Comment>
-            <BitSize>1408</BitSize>
-            <BaseType Namespace="LCLS_General">FB_LED</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcLinkTo</Name>
-                <Value>.iIlluminatorINT := TIID^Device 1 (EtherCAT)^Term 5 (EK1200)^Term 6 (EK1122-0080)^DRL02-EK0 (EK1101-0080)^DRL02-ECJ1 (EK1122)^CryoStat (EK1101)^Term 158 (EL4004)^AO Outputs Channel 1^Analog output</Value>
-              </Property>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: RIX:CRIX:LED:01
-        io: io
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>648667328</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_FiberLite.bLedOutput2</Name>
-            <BitSize>1408</BitSize>
-            <BaseType Namespace="LCLS_General">FB_LED</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcLinkTo</Name>
-                <Value>.iIlluminatorINT := TIID^Device 1 (EtherCAT)^Term 5 (EK1200)^Term 6 (EK1122-0080)^DRL02-EK0 (EK1101-0080)^DRL02-ECJ1 (EK1122)^CryoStat (EK1101)^FiberLite (EL4004)^AO Outputs Channel 2^Analog output</Value>
-              </Property>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: RIX:CRIX:LED:02
-        io: io
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>648668736</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_FiberLite.bLedOutput3</Name>
-            <BitSize>1408</BitSize>
-            <BaseType Namespace="LCLS_General">FB_LED</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcLinkTo</Name>
-                <Value>.iIlluminatorINT := TIID^Device 1 (EtherCAT)^Term 5 (EK1200)^Term 6 (EK1122-0080)^DRL02-EK0 (EK1101-0080)^DRL02-ECJ1 (EK1122)^CryoStat (EK1101)^FiberLite (EL4004)^AO Outputs Channel 3^Analog output</Value>
-              </Property>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: RIX:CRIX:LED:03
-        io: io
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>648670144</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_FiberLite.bLedOutput4</Name>
-            <BitSize>1408</BitSize>
-            <BaseType Namespace="LCLS_General">FB_LED</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcLinkTo</Name>
-                <Value>.iIlluminatorINT := TIID^Device 1 (EtherCAT)^Term 5 (EK1200)^Term 6 (EK1122-0080)^DRL02-EK0 (EK1101-0080)^DRL02-ECJ1 (EK1122)^CryoStat (EK1101)^FiberLite (EL4004)^AO Outputs Channel 4^Analog output</Value>
-              </Property>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: RIX:CRIX:LED:04
-        io: io
-    </Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>648671552</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPXPosPark</Name>
@@ -52241,7 +52152,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648672960</BitOffs>
+            <BitOffs>648667328</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPXPosCenter</Name>
@@ -52290,7 +52201,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648676608</BitOffs>
+            <BitOffs>648670976</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPXPosKnife</Name>
@@ -52339,7 +52250,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648680256</BitOffs>
+            <BitOffs>648674624</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPYPosPark</Name>
@@ -52389,7 +52300,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648683904</BitOffs>
+            <BitOffs>648678272</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPYPosCenter</Name>
@@ -52438,7 +52349,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648687552</BitOffs>
+            <BitOffs>648681920</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPYPosDiode</Name>
@@ -52487,7 +52398,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648691200</BitOffs>
+            <BitOffs>648685568</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPYPosPinhole</Name>
@@ -52536,7 +52447,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648694848</BitOffs>
+            <BitOffs>648689216</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPYPosYAG1</Name>
@@ -52585,7 +52496,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648698496</BitOffs>
+            <BitOffs>648692864</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPYPosYAG2</Name>
@@ -52634,7 +52545,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648702144</BitOffs>
+            <BitOffs>648696512</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPYPosYAG3</Name>
@@ -52683,7 +52594,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648705792</BitOffs>
+            <BitOffs>648700160</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPYPosKnife</Name>
@@ -52732,7 +52643,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648709440</BitOffs>
+            <BitOffs>648703808</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPZPosPark</Name>
@@ -52782,7 +52693,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648713088</BitOffs>
+            <BitOffs>648707456</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPZPosCenter</Name>
@@ -52831,7 +52742,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648716736</BitOffs>
+            <BitOffs>648711104</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPPark</Name>
@@ -52856,7 +52767,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648720384</BitOffs>
+            <BitOffs>648714752</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPUp</Name>
@@ -52881,7 +52792,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648720480</BitOffs>
+            <BitOffs>648714848</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPCenter</Name>
@@ -52906,7 +52817,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648720576</BitOffs>
+            <BitOffs>648714944</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPPinhole</Name>
@@ -52931,7 +52842,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648720672</BitOffs>
+            <BitOffs>648715040</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPDiode</Name>
@@ -52956,7 +52867,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648720768</BitOffs>
+            <BitOffs>648715136</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPYag1</Name>
@@ -52981,7 +52892,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648720864</BitOffs>
+            <BitOffs>648715232</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPYag2</Name>
@@ -53006,7 +52917,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648720960</BitOffs>
+            <BitOffs>648715328</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPYag3</Name>
@@ -53031,7 +52942,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648721056</BitOffs>
+            <BitOffs>648715424</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.stDPKnife</Name>
@@ -53056,7 +52967,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648721152</BitOffs>
+            <BitOffs>648715520</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_DiagnosticPaddle.arrDPStates</Name>
@@ -53181,7 +53092,96 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>648721248</BitOffs>
+            <BitOffs>648715616</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_FiberLite.bLedOutput1</Name>
+            <Comment>Fiber-Lite Control</Comment>
+            <BitSize>1408</BitSize>
+            <BaseType Namespace="LCLS_General">FB_LED</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcLinkTo</Name>
+                <Value>.iIlluminatorINT := TIID^Device 1 (EtherCAT)^Term 5 (EK1200)^Term 6 (EK1122-0080)^DRL02-EK0 (EK1101-0080)^DRL02-ECJ1 (EK1122)^CryoStat (EK1101)^Term 158 (EL4004)^AO Outputs Channel 1^Analog output</Value>
+              </Property>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: RIX:CRIX:LED:01
+        io: io
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>648716480</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_FiberLite.bLedOutput2</Name>
+            <BitSize>1408</BitSize>
+            <BaseType Namespace="LCLS_General">FB_LED</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcLinkTo</Name>
+                <Value>.iIlluminatorINT := TIID^Device 1 (EtherCAT)^Term 5 (EK1200)^Term 6 (EK1122-0080)^DRL02-EK0 (EK1101-0080)^DRL02-ECJ1 (EK1122)^CryoStat (EK1101)^FiberLite (EL4004)^AO Outputs Channel 2^Analog output</Value>
+              </Property>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: RIX:CRIX:LED:02
+        io: io
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>648717888</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_FiberLite.bLedOutput3</Name>
+            <BitSize>1408</BitSize>
+            <BaseType Namespace="LCLS_General">FB_LED</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcLinkTo</Name>
+                <Value>.iIlluminatorINT := TIID^Device 1 (EtherCAT)^Term 5 (EK1200)^Term 6 (EK1122-0080)^DRL02-EK0 (EK1101-0080)^DRL02-ECJ1 (EK1122)^CryoStat (EK1101)^FiberLite (EL4004)^AO Outputs Channel 3^Analog output</Value>
+              </Property>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: RIX:CRIX:LED:03
+        io: io
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>648719296</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_FiberLite.bLedOutput4</Name>
+            <BitSize>1408</BitSize>
+            <BaseType Namespace="LCLS_General">FB_LED</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcLinkTo</Name>
+                <Value>.iIlluminatorINT := TIID^Device 1 (EtherCAT)^Term 5 (EK1200)^Term 6 (EK1122-0080)^DRL02-EK0 (EK1101-0080)^DRL02-ECJ1 (EK1122)^CryoStat (EK1101)^FiberLite (EL4004)^AO Outputs Channel 4^Analog output</Value>
+              </Property>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: RIX:CRIX:LED:04
+        io: io
+    </Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>648720704</BitOffs>
           </Symbol>
           <Symbol>
             <Name>GVL_Illumination.stILMXPosPark</Name>
@@ -55747,7 +55747,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
                 <Name>TcVarGlobal</Name>
               </Property>
             </Properties>
-            <BitOffs>652472992</BitOffs>
+            <BitOffs>652488608</BitOffs>
           </Symbol>
         </DataArea>
         <DataArea>
@@ -55819,7 +55819,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
         </Property>
         <Property>
           <Name>ChangeDate</Name>
-          <Value>2025-10-20T14:57:38</Value>
+          <Value>2025-10-20T16:53:43</Value>
         </Property>
         <Property>
           <Name>GeneratedCodeSize</Name>
