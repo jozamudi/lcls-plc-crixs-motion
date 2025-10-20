@@ -1,3 +1,53 @@
+record(bi, "RIX:CRIX:LED:05_RBV") {
+  field(DESC, "GVL_FiberLite.FZP_TXAS_LED_01")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_FiberLite.FZP_TXAS_LED_01?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bo, "RIX:CRIX:LED:05") {
+  field(DESC, "GVL_FiberLite.FZP_TXAS_LED_01")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_FiberLite.FZP_TXAS_LED_01=")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "COSV DESC DISS OSV SIMS UDFS VAL ZSV")
+  info(archive, "VAL")
+}
+
+record(bi, "RIX:CRIX:LED:06_RBV") {
+  field(DESC, "GVL_FiberLite.FZP_TXAS_LED_02")
+  field(SCAN, "I/O Intr")
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/POLL_RATE=1/GVL_FiberLite.FZP_TXAS_LED_02?")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "DESC DISS OSV SIMS UDFS ZSV")
+  info(archive, "VAL")
+  field(ASG, "NO_WRITE")
+}
+
+record(bo, "RIX:CRIX:LED:06") {
+  field(DESC, "GVL_FiberLite.FZP_TXAS_LED_02")
+  field(DTYP, "asynInt32")
+  field(UDFS, "0")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/GVL_FiberLite.FZP_TXAS_LED_02=")
+  field(ZNAM, "FALSE")
+  field(ONAM, "TRUE")
+  info(autosaveFields_pass0, "COSV DESC DISS OSV SIMS UDFS VAL ZSV")
+  info(archive, "VAL")
+}
+
 record(bi, "RIX:CRIX:LED:01:PWR_RBV") {
   field(DESC, "GVL_FiberLite.bLedOutput1.bLedPower")
   field(SCAN, "I/O Intr")
@@ -46594,7 +46644,7 @@ record(waveform, "CRIX:DPL:MMS:Z:PLC:stEPSP:sMessage_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "CRIX:BEAM:MMS:Y:PLC:bError_RBV") {
+record(bi, "CRIX:FZP:MMS:Y:PLC:bError_RBV") {
   field(DESC, "TRUE if we are in an error state")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46608,7 +46658,7 @@ record(bi, "CRIX:BEAM:MMS:Y:PLC:bError_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "CRIX:BEAM:MMS:Y:PLC:bHardwareEnable_RBV") {
+record(bi, "CRIX:FZP:MMS:Y:PLC:bHardwareEnable_RBV") {
   field(DESC, "TRUE if STO not hit")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46622,7 +46672,7 @@ record(bi, "CRIX:BEAM:MMS:Y:PLC:bHardwareEnable_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "CRIX:BEAM:MMS:Y:PLC:bHomeCmd_RBV") {
+record(bi, "CRIX:FZP:MMS:Y:PLC:bHomeCmd_RBV") {
   field(DESC, "Start the homing routine")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46636,7 +46686,7 @@ record(bi, "CRIX:BEAM:MMS:Y:PLC:bHomeCmd_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bo, "CRIX:BEAM:MMS:Y:PLC:bHomeCmd") {
+record(bo, "CRIX:FZP:MMS:Y:PLC:bHomeCmd") {
   field(DESC, "Start the homing routine")
   field(DTYP, "asynInt32")
   field(UDFS, "0")
@@ -46647,7 +46697,7 @@ record(bo, "CRIX:BEAM:MMS:Y:PLC:bHomeCmd") {
   info(archive, "VAL")
 }
 
-record(bi, "CRIX:BEAM:MMS:Y:PLC:bReset_RBV") {
+record(bi, "CRIX:FZP:MMS:Y:PLC:bReset_RBV") {
   field(DESC, "Used internally to reset errors")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46661,7 +46711,7 @@ record(bi, "CRIX:BEAM:MMS:Y:PLC:bReset_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bo, "CRIX:BEAM:MMS:Y:PLC:bReset") {
+record(bo, "CRIX:FZP:MMS:Y:PLC:bReset") {
   field(DESC, "Used internally to reset errors")
   field(DTYP, "asynInt32")
   field(UDFS, "0")
@@ -46672,7 +46722,7 @@ record(bo, "CRIX:BEAM:MMS:Y:PLC:bReset") {
   info(archive, "VAL")
 }
 
-record(bi, "CRIX:BEAM:MMS:Y:PLC:bUserEnable_RBV") {
+record(bi, "CRIX:FZP:MMS:Y:PLC:bUserEnable_RBV") {
   # Used to disable power entirely for an axis
   field(DESC, "Used to disable powe...irely for an axis")
   field(SCAN, "I/O Intr")
@@ -46687,7 +46737,7 @@ record(bi, "CRIX:BEAM:MMS:Y:PLC:bUserEnable_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bo, "CRIX:BEAM:MMS:Y:PLC:bUserEnable") {
+record(bo, "CRIX:FZP:MMS:Y:PLC:bUserEnable") {
   # Used to disable power entirely for an axis
   field(DESC, "Used to disable powe...irely for an axis")
   field(DTYP, "asynInt32")
@@ -46699,7 +46749,7 @@ record(bo, "CRIX:BEAM:MMS:Y:PLC:bUserEnable") {
   info(archive, "VAL")
 }
 
-record(ai, "CRIX:BEAM:MMS:Y:PLC:fHomePosition_RBV") {
+record(ai, "CRIX:FZP:MMS:Y:PLC:fHomePosition_RBV") {
   # Used internally and by the IOC to pick home position
   field(DESC, "Used internally and ...ick home position")
   field(SCAN, "I/O Intr")
@@ -46713,7 +46763,7 @@ record(ai, "CRIX:BEAM:MMS:Y:PLC:fHomePosition_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(ao, "CRIX:BEAM:MMS:Y:PLC:fHomePosition") {
+record(ao, "CRIX:FZP:MMS:Y:PLC:fHomePosition") {
   # Used internally and by the IOC to pick home position
   field(DESC, "Used internally and ...ick home position")
   field(DTYP, "asynFloat64")
@@ -46724,7 +46774,7 @@ record(ao, "CRIX:BEAM:MMS:Y:PLC:fHomePosition") {
   info(archive, "VAL")
 }
 
-record(ai, "CRIX:BEAM:MMS:Y:PLC:fPosDiff_RBV") {
+record(ai, "CRIX:FZP:MMS:Y:PLC:fPosDiff_RBV") {
   field(DESC, "Position lag difference")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46737,7 +46787,7 @@ record(ai, "CRIX:BEAM:MMS:Y:PLC:fPosDiff_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(longin, "CRIX:BEAM:MMS:Y:PLC:nEncoderCount_RBV") {
+record(longin, "CRIX:FZP:MMS:Y:PLC:nEncoderCount_RBV") {
   field(DESC, "Count from encoder hardware")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46749,7 +46799,7 @@ record(longin, "CRIX:BEAM:MMS:Y:PLC:nEncoderCount_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(longin, "CRIX:BEAM:MMS:Y:PLC:nErrorId_RBV") {
+record(longin, "CRIX:FZP:MMS:Y:PLC:nErrorId_RBV") {
   field(DESC, "Error code if nonzero")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46761,7 +46811,7 @@ record(longin, "CRIX:BEAM:MMS:Y:PLC:nErrorId_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:Y:PLC:sErrorMessage_RBV") {
+record(waveform, "CRIX:FZP:MMS:Y:PLC:sErrorMessage_RBV") {
   field(DESC, "Message to identify the error state")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46777,7 +46827,7 @@ record(waveform, "CRIX:BEAM:MMS:Y:PLC:sErrorMessage_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "CRIX:BEAM:MMS:Y:PLC:stEPSB:bEPS_OK_RBV") {
+record(bi, "CRIX:FZP:MMS:Y:PLC:stEPSB:bEPS_OK_RBV") {
   field(DESC, "check if nFlags are all true")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46791,7 +46841,7 @@ record(bi, "CRIX:BEAM:MMS:Y:PLC:stEPSB:bEPS_OK_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(longin, "CRIX:BEAM:MMS:Y:PLC:stEPSB:nFlags_RBV") {
+record(longin, "CRIX:FZP:MMS:Y:PLC:stEPSB:nFlags_RBV") {
   field(DESC, "Contains EPS flags")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46803,7 +46853,7 @@ record(longin, "CRIX:BEAM:MMS:Y:PLC:stEPSB:nFlags_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:Y:PLC:stEPSB:sFlagDesc_RBV") {
+record(waveform, "CRIX:FZP:MMS:Y:PLC:stEPSB:sFlagDesc_RBV") {
   field(DESC, "semicolon-delimited nFlag variable")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46819,7 +46869,7 @@ record(waveform, "CRIX:BEAM:MMS:Y:PLC:stEPSB:sFlagDesc_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:Y:PLC:stEPSB:sMessage_RBV") {
+record(waveform, "CRIX:FZP:MMS:Y:PLC:stEPSB:sMessage_RBV") {
   field(DESC, "Message from EPS to usr")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46835,7 +46885,7 @@ record(waveform, "CRIX:BEAM:MMS:Y:PLC:stEPSB:sMessage_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "CRIX:BEAM:MMS:Y:PLC:stEPSF:bEPS_OK_RBV") {
+record(bi, "CRIX:FZP:MMS:Y:PLC:stEPSF:bEPS_OK_RBV") {
   field(DESC, "check if nFlags are all true")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46849,7 +46899,7 @@ record(bi, "CRIX:BEAM:MMS:Y:PLC:stEPSF:bEPS_OK_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(longin, "CRIX:BEAM:MMS:Y:PLC:stEPSF:nFlags_RBV") {
+record(longin, "CRIX:FZP:MMS:Y:PLC:stEPSF:nFlags_RBV") {
   field(DESC, "Contains EPS flags")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46861,7 +46911,7 @@ record(longin, "CRIX:BEAM:MMS:Y:PLC:stEPSF:nFlags_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:Y:PLC:stEPSF:sFlagDesc_RBV") {
+record(waveform, "CRIX:FZP:MMS:Y:PLC:stEPSF:sFlagDesc_RBV") {
   field(DESC, "semicolon-delimited nFlag variable")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46877,7 +46927,7 @@ record(waveform, "CRIX:BEAM:MMS:Y:PLC:stEPSF:sFlagDesc_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:Y:PLC:stEPSF:sMessage_RBV") {
+record(waveform, "CRIX:FZP:MMS:Y:PLC:stEPSF:sMessage_RBV") {
   field(DESC, "Message from EPS to usr")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46893,7 +46943,7 @@ record(waveform, "CRIX:BEAM:MMS:Y:PLC:stEPSF:sMessage_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "CRIX:BEAM:MMS:Y:PLC:stEPSP:bEPS_OK_RBV") {
+record(bi, "CRIX:FZP:MMS:Y:PLC:stEPSP:bEPS_OK_RBV") {
   field(DESC, "check if nFlags are all true")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46907,7 +46957,7 @@ record(bi, "CRIX:BEAM:MMS:Y:PLC:stEPSP:bEPS_OK_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(longin, "CRIX:BEAM:MMS:Y:PLC:stEPSP:nFlags_RBV") {
+record(longin, "CRIX:FZP:MMS:Y:PLC:stEPSP:nFlags_RBV") {
   field(DESC, "Contains EPS flags")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46919,7 +46969,7 @@ record(longin, "CRIX:BEAM:MMS:Y:PLC:stEPSP:nFlags_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:Y:PLC:stEPSP:sFlagDesc_RBV") {
+record(waveform, "CRIX:FZP:MMS:Y:PLC:stEPSP:sFlagDesc_RBV") {
   field(DESC, "semicolon-delimited nFlag variable")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46935,7 +46985,7 @@ record(waveform, "CRIX:BEAM:MMS:Y:PLC:stEPSP:sFlagDesc_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:Y:PLC:stEPSP:sMessage_RBV") {
+record(waveform, "CRIX:FZP:MMS:Y:PLC:stEPSP:sMessage_RBV") {
   field(DESC, "Message from EPS to usr")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46951,7 +47001,7 @@ record(waveform, "CRIX:BEAM:MMS:Y:PLC:stEPSP:sMessage_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "CRIX:BEAM:MMS:X:PLC:bError_RBV") {
+record(bi, "CRIX:FZP:MMS:X:PLC:bError_RBV") {
   field(DESC, "TRUE if we are in an error state")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46965,7 +47015,7 @@ record(bi, "CRIX:BEAM:MMS:X:PLC:bError_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "CRIX:BEAM:MMS:X:PLC:bHardwareEnable_RBV") {
+record(bi, "CRIX:FZP:MMS:X:PLC:bHardwareEnable_RBV") {
   field(DESC, "TRUE if STO not hit")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46979,7 +47029,7 @@ record(bi, "CRIX:BEAM:MMS:X:PLC:bHardwareEnable_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "CRIX:BEAM:MMS:X:PLC:bHomeCmd_RBV") {
+record(bi, "CRIX:FZP:MMS:X:PLC:bHomeCmd_RBV") {
   field(DESC, "Start the homing routine")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -46993,7 +47043,7 @@ record(bi, "CRIX:BEAM:MMS:X:PLC:bHomeCmd_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bo, "CRIX:BEAM:MMS:X:PLC:bHomeCmd") {
+record(bo, "CRIX:FZP:MMS:X:PLC:bHomeCmd") {
   field(DESC, "Start the homing routine")
   field(DTYP, "asynInt32")
   field(UDFS, "0")
@@ -47004,7 +47054,7 @@ record(bo, "CRIX:BEAM:MMS:X:PLC:bHomeCmd") {
   info(archive, "VAL")
 }
 
-record(bi, "CRIX:BEAM:MMS:X:PLC:bReset_RBV") {
+record(bi, "CRIX:FZP:MMS:X:PLC:bReset_RBV") {
   field(DESC, "Used internally to reset errors")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47018,7 +47068,7 @@ record(bi, "CRIX:BEAM:MMS:X:PLC:bReset_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bo, "CRIX:BEAM:MMS:X:PLC:bReset") {
+record(bo, "CRIX:FZP:MMS:X:PLC:bReset") {
   field(DESC, "Used internally to reset errors")
   field(DTYP, "asynInt32")
   field(UDFS, "0")
@@ -47029,7 +47079,7 @@ record(bo, "CRIX:BEAM:MMS:X:PLC:bReset") {
   info(archive, "VAL")
 }
 
-record(bi, "CRIX:BEAM:MMS:X:PLC:bUserEnable_RBV") {
+record(bi, "CRIX:FZP:MMS:X:PLC:bUserEnable_RBV") {
   # Used to disable power entirely for an axis
   field(DESC, "Used to disable powe...irely for an axis")
   field(SCAN, "I/O Intr")
@@ -47044,7 +47094,7 @@ record(bi, "CRIX:BEAM:MMS:X:PLC:bUserEnable_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bo, "CRIX:BEAM:MMS:X:PLC:bUserEnable") {
+record(bo, "CRIX:FZP:MMS:X:PLC:bUserEnable") {
   # Used to disable power entirely for an axis
   field(DESC, "Used to disable powe...irely for an axis")
   field(DTYP, "asynInt32")
@@ -47056,7 +47106,7 @@ record(bo, "CRIX:BEAM:MMS:X:PLC:bUserEnable") {
   info(archive, "VAL")
 }
 
-record(ai, "CRIX:BEAM:MMS:X:PLC:fHomePosition_RBV") {
+record(ai, "CRIX:FZP:MMS:X:PLC:fHomePosition_RBV") {
   # Used internally and by the IOC to pick home position
   field(DESC, "Used internally and ...ick home position")
   field(SCAN, "I/O Intr")
@@ -47070,7 +47120,7 @@ record(ai, "CRIX:BEAM:MMS:X:PLC:fHomePosition_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(ao, "CRIX:BEAM:MMS:X:PLC:fHomePosition") {
+record(ao, "CRIX:FZP:MMS:X:PLC:fHomePosition") {
   # Used internally and by the IOC to pick home position
   field(DESC, "Used internally and ...ick home position")
   field(DTYP, "asynFloat64")
@@ -47081,7 +47131,7 @@ record(ao, "CRIX:BEAM:MMS:X:PLC:fHomePosition") {
   info(archive, "VAL")
 }
 
-record(ai, "CRIX:BEAM:MMS:X:PLC:fPosDiff_RBV") {
+record(ai, "CRIX:FZP:MMS:X:PLC:fPosDiff_RBV") {
   field(DESC, "Position lag difference")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47094,7 +47144,7 @@ record(ai, "CRIX:BEAM:MMS:X:PLC:fPosDiff_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(longin, "CRIX:BEAM:MMS:X:PLC:nEncoderCount_RBV") {
+record(longin, "CRIX:FZP:MMS:X:PLC:nEncoderCount_RBV") {
   field(DESC, "Count from encoder hardware")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47106,7 +47156,7 @@ record(longin, "CRIX:BEAM:MMS:X:PLC:nEncoderCount_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(longin, "CRIX:BEAM:MMS:X:PLC:nErrorId_RBV") {
+record(longin, "CRIX:FZP:MMS:X:PLC:nErrorId_RBV") {
   field(DESC, "Error code if nonzero")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47118,7 +47168,7 @@ record(longin, "CRIX:BEAM:MMS:X:PLC:nErrorId_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:X:PLC:sErrorMessage_RBV") {
+record(waveform, "CRIX:FZP:MMS:X:PLC:sErrorMessage_RBV") {
   field(DESC, "Message to identify the error state")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47134,7 +47184,7 @@ record(waveform, "CRIX:BEAM:MMS:X:PLC:sErrorMessage_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "CRIX:BEAM:MMS:X:PLC:stEPSB:bEPS_OK_RBV") {
+record(bi, "CRIX:FZP:MMS:X:PLC:stEPSB:bEPS_OK_RBV") {
   field(DESC, "check if nFlags are all true")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47148,7 +47198,7 @@ record(bi, "CRIX:BEAM:MMS:X:PLC:stEPSB:bEPS_OK_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(longin, "CRIX:BEAM:MMS:X:PLC:stEPSB:nFlags_RBV") {
+record(longin, "CRIX:FZP:MMS:X:PLC:stEPSB:nFlags_RBV") {
   field(DESC, "Contains EPS flags")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47160,7 +47210,7 @@ record(longin, "CRIX:BEAM:MMS:X:PLC:stEPSB:nFlags_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:X:PLC:stEPSB:sFlagDesc_RBV") {
+record(waveform, "CRIX:FZP:MMS:X:PLC:stEPSB:sFlagDesc_RBV") {
   field(DESC, "semicolon-delimited nFlag variable")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47176,7 +47226,7 @@ record(waveform, "CRIX:BEAM:MMS:X:PLC:stEPSB:sFlagDesc_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:X:PLC:stEPSB:sMessage_RBV") {
+record(waveform, "CRIX:FZP:MMS:X:PLC:stEPSB:sMessage_RBV") {
   field(DESC, "Message from EPS to usr")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47192,7 +47242,7 @@ record(waveform, "CRIX:BEAM:MMS:X:PLC:stEPSB:sMessage_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "CRIX:BEAM:MMS:X:PLC:stEPSF:bEPS_OK_RBV") {
+record(bi, "CRIX:FZP:MMS:X:PLC:stEPSF:bEPS_OK_RBV") {
   field(DESC, "check if nFlags are all true")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47206,7 +47256,7 @@ record(bi, "CRIX:BEAM:MMS:X:PLC:stEPSF:bEPS_OK_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(longin, "CRIX:BEAM:MMS:X:PLC:stEPSF:nFlags_RBV") {
+record(longin, "CRIX:FZP:MMS:X:PLC:stEPSF:nFlags_RBV") {
   field(DESC, "Contains EPS flags")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47218,7 +47268,7 @@ record(longin, "CRIX:BEAM:MMS:X:PLC:stEPSF:nFlags_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:X:PLC:stEPSF:sFlagDesc_RBV") {
+record(waveform, "CRIX:FZP:MMS:X:PLC:stEPSF:sFlagDesc_RBV") {
   field(DESC, "semicolon-delimited nFlag variable")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47234,7 +47284,7 @@ record(waveform, "CRIX:BEAM:MMS:X:PLC:stEPSF:sFlagDesc_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:X:PLC:stEPSF:sMessage_RBV") {
+record(waveform, "CRIX:FZP:MMS:X:PLC:stEPSF:sMessage_RBV") {
   field(DESC, "Message from EPS to usr")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47250,7 +47300,7 @@ record(waveform, "CRIX:BEAM:MMS:X:PLC:stEPSF:sMessage_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "CRIX:BEAM:MMS:X:PLC:stEPSP:bEPS_OK_RBV") {
+record(bi, "CRIX:FZP:MMS:X:PLC:stEPSP:bEPS_OK_RBV") {
   field(DESC, "check if nFlags are all true")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47264,7 +47314,7 @@ record(bi, "CRIX:BEAM:MMS:X:PLC:stEPSP:bEPS_OK_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(longin, "CRIX:BEAM:MMS:X:PLC:stEPSP:nFlags_RBV") {
+record(longin, "CRIX:FZP:MMS:X:PLC:stEPSP:nFlags_RBV") {
   field(DESC, "Contains EPS flags")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47276,7 +47326,7 @@ record(longin, "CRIX:BEAM:MMS:X:PLC:stEPSP:nFlags_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:X:PLC:stEPSP:sFlagDesc_RBV") {
+record(waveform, "CRIX:FZP:MMS:X:PLC:stEPSP:sFlagDesc_RBV") {
   field(DESC, "semicolon-delimited nFlag variable")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47292,7 +47342,7 @@ record(waveform, "CRIX:BEAM:MMS:X:PLC:stEPSP:sFlagDesc_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:X:PLC:stEPSP:sMessage_RBV") {
+record(waveform, "CRIX:FZP:MMS:X:PLC:stEPSP:sMessage_RBV") {
   field(DESC, "Message from EPS to usr")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47308,7 +47358,7 @@ record(waveform, "CRIX:BEAM:MMS:X:PLC:stEPSP:sMessage_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "CRIX:BEAM:MMS:Z:PLC:bError_RBV") {
+record(bi, "CRIX:FZP:MMS:Z:PLC:bError_RBV") {
   field(DESC, "TRUE if we are in an error state")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47322,7 +47372,7 @@ record(bi, "CRIX:BEAM:MMS:Z:PLC:bError_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "CRIX:BEAM:MMS:Z:PLC:bHardwareEnable_RBV") {
+record(bi, "CRIX:FZP:MMS:Z:PLC:bHardwareEnable_RBV") {
   field(DESC, "TRUE if STO not hit")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47336,7 +47386,7 @@ record(bi, "CRIX:BEAM:MMS:Z:PLC:bHardwareEnable_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "CRIX:BEAM:MMS:Z:PLC:bHomeCmd_RBV") {
+record(bi, "CRIX:FZP:MMS:Z:PLC:bHomeCmd_RBV") {
   field(DESC, "Start the homing routine")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47350,7 +47400,7 @@ record(bi, "CRIX:BEAM:MMS:Z:PLC:bHomeCmd_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bo, "CRIX:BEAM:MMS:Z:PLC:bHomeCmd") {
+record(bo, "CRIX:FZP:MMS:Z:PLC:bHomeCmd") {
   field(DESC, "Start the homing routine")
   field(DTYP, "asynInt32")
   field(UDFS, "0")
@@ -47361,7 +47411,7 @@ record(bo, "CRIX:BEAM:MMS:Z:PLC:bHomeCmd") {
   info(archive, "VAL")
 }
 
-record(bi, "CRIX:BEAM:MMS:Z:PLC:bReset_RBV") {
+record(bi, "CRIX:FZP:MMS:Z:PLC:bReset_RBV") {
   field(DESC, "Used internally to reset errors")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47375,7 +47425,7 @@ record(bi, "CRIX:BEAM:MMS:Z:PLC:bReset_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bo, "CRIX:BEAM:MMS:Z:PLC:bReset") {
+record(bo, "CRIX:FZP:MMS:Z:PLC:bReset") {
   field(DESC, "Used internally to reset errors")
   field(DTYP, "asynInt32")
   field(UDFS, "0")
@@ -47386,7 +47436,7 @@ record(bo, "CRIX:BEAM:MMS:Z:PLC:bReset") {
   info(archive, "VAL")
 }
 
-record(bi, "CRIX:BEAM:MMS:Z:PLC:bUserEnable_RBV") {
+record(bi, "CRIX:FZP:MMS:Z:PLC:bUserEnable_RBV") {
   # Used to disable power entirely for an axis
   field(DESC, "Used to disable powe...irely for an axis")
   field(SCAN, "I/O Intr")
@@ -47401,7 +47451,7 @@ record(bi, "CRIX:BEAM:MMS:Z:PLC:bUserEnable_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bo, "CRIX:BEAM:MMS:Z:PLC:bUserEnable") {
+record(bo, "CRIX:FZP:MMS:Z:PLC:bUserEnable") {
   # Used to disable power entirely for an axis
   field(DESC, "Used to disable powe...irely for an axis")
   field(DTYP, "asynInt32")
@@ -47413,7 +47463,7 @@ record(bo, "CRIX:BEAM:MMS:Z:PLC:bUserEnable") {
   info(archive, "VAL")
 }
 
-record(ai, "CRIX:BEAM:MMS:Z:PLC:fHomePosition_RBV") {
+record(ai, "CRIX:FZP:MMS:Z:PLC:fHomePosition_RBV") {
   # Used internally and by the IOC to pick home position
   field(DESC, "Used internally and ...ick home position")
   field(SCAN, "I/O Intr")
@@ -47427,7 +47477,7 @@ record(ai, "CRIX:BEAM:MMS:Z:PLC:fHomePosition_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(ao, "CRIX:BEAM:MMS:Z:PLC:fHomePosition") {
+record(ao, "CRIX:FZP:MMS:Z:PLC:fHomePosition") {
   # Used internally and by the IOC to pick home position
   field(DESC, "Used internally and ...ick home position")
   field(DTYP, "asynFloat64")
@@ -47438,7 +47488,7 @@ record(ao, "CRIX:BEAM:MMS:Z:PLC:fHomePosition") {
   info(archive, "VAL")
 }
 
-record(ai, "CRIX:BEAM:MMS:Z:PLC:fPosDiff_RBV") {
+record(ai, "CRIX:FZP:MMS:Z:PLC:fPosDiff_RBV") {
   field(DESC, "Position lag difference")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47451,7 +47501,7 @@ record(ai, "CRIX:BEAM:MMS:Z:PLC:fPosDiff_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(longin, "CRIX:BEAM:MMS:Z:PLC:nEncoderCount_RBV") {
+record(longin, "CRIX:FZP:MMS:Z:PLC:nEncoderCount_RBV") {
   field(DESC, "Count from encoder hardware")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47463,7 +47513,7 @@ record(longin, "CRIX:BEAM:MMS:Z:PLC:nEncoderCount_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(longin, "CRIX:BEAM:MMS:Z:PLC:nErrorId_RBV") {
+record(longin, "CRIX:FZP:MMS:Z:PLC:nErrorId_RBV") {
   field(DESC, "Error code if nonzero")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47475,7 +47525,7 @@ record(longin, "CRIX:BEAM:MMS:Z:PLC:nErrorId_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:Z:PLC:sErrorMessage_RBV") {
+record(waveform, "CRIX:FZP:MMS:Z:PLC:sErrorMessage_RBV") {
   field(DESC, "Message to identify the error state")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47491,7 +47541,7 @@ record(waveform, "CRIX:BEAM:MMS:Z:PLC:sErrorMessage_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "CRIX:BEAM:MMS:Z:PLC:stEPSB:bEPS_OK_RBV") {
+record(bi, "CRIX:FZP:MMS:Z:PLC:stEPSB:bEPS_OK_RBV") {
   field(DESC, "check if nFlags are all true")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47505,7 +47555,7 @@ record(bi, "CRIX:BEAM:MMS:Z:PLC:stEPSB:bEPS_OK_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(longin, "CRIX:BEAM:MMS:Z:PLC:stEPSB:nFlags_RBV") {
+record(longin, "CRIX:FZP:MMS:Z:PLC:stEPSB:nFlags_RBV") {
   field(DESC, "Contains EPS flags")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47517,7 +47567,7 @@ record(longin, "CRIX:BEAM:MMS:Z:PLC:stEPSB:nFlags_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:Z:PLC:stEPSB:sFlagDesc_RBV") {
+record(waveform, "CRIX:FZP:MMS:Z:PLC:stEPSB:sFlagDesc_RBV") {
   field(DESC, "semicolon-delimited nFlag variable")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47533,7 +47583,7 @@ record(waveform, "CRIX:BEAM:MMS:Z:PLC:stEPSB:sFlagDesc_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:Z:PLC:stEPSB:sMessage_RBV") {
+record(waveform, "CRIX:FZP:MMS:Z:PLC:stEPSB:sMessage_RBV") {
   field(DESC, "Message from EPS to usr")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47549,7 +47599,7 @@ record(waveform, "CRIX:BEAM:MMS:Z:PLC:stEPSB:sMessage_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "CRIX:BEAM:MMS:Z:PLC:stEPSF:bEPS_OK_RBV") {
+record(bi, "CRIX:FZP:MMS:Z:PLC:stEPSF:bEPS_OK_RBV") {
   field(DESC, "check if nFlags are all true")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47563,7 +47613,7 @@ record(bi, "CRIX:BEAM:MMS:Z:PLC:stEPSF:bEPS_OK_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(longin, "CRIX:BEAM:MMS:Z:PLC:stEPSF:nFlags_RBV") {
+record(longin, "CRIX:FZP:MMS:Z:PLC:stEPSF:nFlags_RBV") {
   field(DESC, "Contains EPS flags")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47575,7 +47625,7 @@ record(longin, "CRIX:BEAM:MMS:Z:PLC:stEPSF:nFlags_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:Z:PLC:stEPSF:sFlagDesc_RBV") {
+record(waveform, "CRIX:FZP:MMS:Z:PLC:stEPSF:sFlagDesc_RBV") {
   field(DESC, "semicolon-delimited nFlag variable")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47591,7 +47641,7 @@ record(waveform, "CRIX:BEAM:MMS:Z:PLC:stEPSF:sFlagDesc_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:Z:PLC:stEPSF:sMessage_RBV") {
+record(waveform, "CRIX:FZP:MMS:Z:PLC:stEPSF:sMessage_RBV") {
   field(DESC, "Message from EPS to usr")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47607,7 +47657,7 @@ record(waveform, "CRIX:BEAM:MMS:Z:PLC:stEPSF:sMessage_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(bi, "CRIX:BEAM:MMS:Z:PLC:stEPSP:bEPS_OK_RBV") {
+record(bi, "CRIX:FZP:MMS:Z:PLC:stEPSP:bEPS_OK_RBV") {
   field(DESC, "check if nFlags are all true")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47621,7 +47671,7 @@ record(bi, "CRIX:BEAM:MMS:Z:PLC:stEPSP:bEPS_OK_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(longin, "CRIX:BEAM:MMS:Z:PLC:stEPSP:nFlags_RBV") {
+record(longin, "CRIX:FZP:MMS:Z:PLC:stEPSP:nFlags_RBV") {
   field(DESC, "Contains EPS flags")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47633,7 +47683,7 @@ record(longin, "CRIX:BEAM:MMS:Z:PLC:stEPSP:nFlags_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:Z:PLC:stEPSP:sFlagDesc_RBV") {
+record(waveform, "CRIX:FZP:MMS:Z:PLC:stEPSP:sFlagDesc_RBV") {
   field(DESC, "semicolon-delimited nFlag variable")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
@@ -47649,7 +47699,7 @@ record(waveform, "CRIX:BEAM:MMS:Z:PLC:stEPSP:sFlagDesc_RBV") {
   field(ASG, "NO_WRITE")
 }
 
-record(waveform, "CRIX:BEAM:MMS:Z:PLC:stEPSP:sMessage_RBV") {
+record(waveform, "CRIX:FZP:MMS:Z:PLC:stEPSP:sMessage_RBV") {
   field(DESC, "Message from EPS to usr")
   field(SCAN, "I/O Intr")
   field(PINI, "1")
