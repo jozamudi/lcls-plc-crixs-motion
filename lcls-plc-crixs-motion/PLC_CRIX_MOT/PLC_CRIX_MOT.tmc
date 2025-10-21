@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{C0C174EF-78C7-E2C9-1293-FE3016979684}" GeneratedBy="TwinCAT XAE Plc">
+<TcModuleClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2009/05/TcModuleClass" Hash="{9F1CA78C-A87B-4AC5-2766-CD18793318AD}" GeneratedBy="TwinCAT XAE Plc">
   <DataTypes>
     <DataType>
       <Name Namespace="LCLS_General">ST_System</Name>
@@ -43425,6 +43425,63 @@ These features efficiently address the addition, removal, and verification of be
             <BitOffs>648441280</BitOffs>
           </Symbol>
           <Symbol>
+            <Name>GVL_FiberLite.FZP_TXAS_LED_01</Name>
+            <Comment>
+    addding two digital outputs to be used for FZP-TXAS led control
+    Beckhoff EL2004 FZP-TXAS-LED- 4 Digital Outputs
+    Renamed variables to FZP_TXAS_LED_01–02
+</Comment>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcLinkTo</Name>
+                <Value>TIID^Device 1 (EtherCAT)^Term 5 (EK1200)^Term 6 (EK1122-0080)^DRL02-EK0 (EK1101-0080)^DRL02-ECJ0 (EK1122-0080)^Term 109 (EK1101-0080)^FZP LED(EL2004)^Channel 1^Output</Value>
+              </Property>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: RIX:CRIX:LED:05
+        io: io
+</Value>
+              </Property>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Output</Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>648666256</BitOffs>
+          </Symbol>
+          <Symbol>
+            <Name>GVL_FiberLite.FZP_TXAS_LED_02</Name>
+            <BitSize>8</BitSize>
+            <BaseType>BOOL</BaseType>
+            <Properties>
+              <Property>
+                <Name>TcLinkTo</Name>
+                <Value>TIID^Device 1 (EtherCAT)^Term 5 (EK1200)^Term 6 (EK1122-0080)^DRL02-EK0 (EK1101-0080)^DRL02-ECJ0 (EK1122-0080)^Term 109 (EK1101-0080)^FZP LED(EL2004)^Channel 2^Output</Value>
+              </Property>
+              <Property>
+                <Name>pytmc</Name>
+                <Value>
+        pv: RIX:CRIX:LED:06
+        io: io
+</Value>
+              </Property>
+              <Property>
+                <Name>TcAddressType</Name>
+                <Value>Output</Value>
+              </Property>
+              <Property>
+                <Name>TcVarGlobal</Name>
+              </Property>
+            </Properties>
+            <BitOffs>648666264</BitOffs>
+          </Symbol>
+          <Symbol>
             <Name>GVL_FiberLite.bLedOutput1.bLedPower</Name>
             <BitSize>8</BitSize>
             <BaseType>BOOL</BaseType>
@@ -52037,55 +52094,6 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
             <BitOffs>648666248</BitOffs>
           </Symbol>
           <Symbol>
-            <Name>GVL_FiberLite.FZP_TXAS_LED_01</Name>
-            <Comment>
-    addding two digital outputs to be used for FZP-TXAS led control
-    Beckhoff EL2004 FZP-TXAS-LED- 4 Digital Outputs
-    Renamed variables to FZP_TXAS_LED_01–02
-</Comment>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcLinkTo</Name>
-                <Value>.FZP_TXAS_LED_01 := TIID^Device 1 (EtherCAT)^Term 5 (EK1200)^Term 6 (EK1122-0080)^DRL02-EK0 (EK1101-0080)^DRL02-ECJ0 (EK1122-0080)^Term 109 (EK1101-0080)^FZP TXAS LED(EL2004)^Channel 1^Output</Value>
-              </Property>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: RIX:CRIX:LED:05
-        io: io
-</Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>648666256</BitOffs>
-          </Symbol>
-          <Symbol>
-            <Name>GVL_FiberLite.FZP_TXAS_LED_02</Name>
-            <BitSize>8</BitSize>
-            <BaseType>BOOL</BaseType>
-            <Properties>
-              <Property>
-                <Name>TcLinkTo</Name>
-                <Value>.FZP_TXAS_LED_01 := TIID^Device 1 (EtherCAT)^Term 5 (EK1200)^Term 6 (EK1122-0080)^DRL02-EK0 (EK1101-0080)^DRL02-ECJ0 (EK1122-0080)^Term 109 (EK1101-0080)^FZP TXAS LED(EL2004)^Channel 2^Output</Value>
-              </Property>
-              <Property>
-                <Name>pytmc</Name>
-                <Value>
-        pv: RIX:CRIX:LED:06
-        io: io
-</Value>
-              </Property>
-              <Property>
-                <Name>TcVarGlobal</Name>
-              </Property>
-            </Properties>
-            <BitOffs>648666264</BitOffs>
-          </Symbol>
-          <Symbol>
             <Name>PRG_OBJ_X_EPS.fbResetTimer</Name>
             <BitSize>352</BitSize>
             <BaseType>FB_RestTimer</BaseType>
@@ -55819,7 +55827,7 @@ fbTestMotor		:	FB_SIM_MOTOR;</Comment>
         </Property>
         <Property>
           <Name>ChangeDate</Name>
-          <Value>2025-10-20T16:53:43</Value>
+          <Value>2025-10-21T15:50:44</Value>
         </Property>
         <Property>
           <Name>GeneratedCodeSize</Name>
