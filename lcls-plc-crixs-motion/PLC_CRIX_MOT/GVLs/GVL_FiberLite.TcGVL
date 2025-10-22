@@ -56,7 +56,7 @@ FZP_TXAS_LED_01 AT %Q*:BOOL;
         pv: RIX:CRIX:LED:06
         io: io
 '}
-FZP_TXAS_LED_02 AT %Q*: BOOL;
+FZP_TXAS_LED_02 AT %Q*:BOOL;
 
 END_VAR]]></Declaration>
   </GVL>
