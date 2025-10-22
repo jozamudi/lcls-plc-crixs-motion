@@ -38,7 +38,7 @@ VAR_GLOBAL
 
 
     (*
-    addding two digital outputs to be used for FZP-TXAS led control
+    adding two digital outputs to be used for FZP-TXAS led control
     Beckhoff EL2004 FZP-TXAS-LED- 4 Digital Outputs
     Renamed variables to FZP_TXAS_LED_01–02
 *)
@@ -56,7 +56,7 @@ FZP_TXAS_LED_01 AT %Q*:BOOL;
         pv: RIX:CRIX:LED:06
         io: io
 '}
-FZP_TXAS_LED_02 AT %Q*: BOOL;
+FZP_TXAS_LED_02 AT %Q*:BOOL;
 
 END_VAR]]></Declaration>
   </GVL>
