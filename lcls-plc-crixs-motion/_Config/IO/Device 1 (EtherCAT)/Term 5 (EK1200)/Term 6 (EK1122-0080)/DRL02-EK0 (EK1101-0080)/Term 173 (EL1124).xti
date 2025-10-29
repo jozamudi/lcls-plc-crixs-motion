@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4022.30" ClassName="CFlbTermDef" SubType="9099">
 	<Box Id="173" BoxType="9099">
-		<Name>__FILENAME__</Name>
+		<Name>Term 173 (EL1124)</Name>
 		<ImageId>7</ImageId>
 		<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04643052" RevisionNo="#x00120000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1124 4Ch. Dig. Input 5V, 10µs, Sensor Power" Desc="EL1124">
 			<SyncMan>001001000000010004000000000000000100001000010000</SyncMan>
