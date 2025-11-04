@@ -25,8 +25,11 @@
 		<Box File="Camera Y (EL7041).xti" Id="122">
 			<EtherCAT PortABoxInfo="#x01000070"/>
 		</Box>
-		<Box File="Term 129 (EL9011).xti" Id="130">
+		<Box File="FZP LED(EL2004).xti" Id="125">
 			<EtherCAT PortABoxInfo="#x0100007a"/>
+		</Box>
+		<Box File="Term 129 (EL9011).xti" Id="130">
+			<EtherCAT PortABoxInfo="#x0100007d"/>
 		</Box>
 	</Box>
 </TcSmItem>

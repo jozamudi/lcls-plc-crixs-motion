@@ -36,6 +36,28 @@ VAR_GLOBAL
 
     bLedOutput4 : FB_LED;
 
+
+    (*
+    adding two digital outputs to be used for FZP-TXAS led control
+    Beckhoff EL2004 FZP-TXAS-LED- 4 Digital Outputs
+    Renamed variables to FZP_TXAS_LED_01–02
+*)
+
+     {attribute 'TcLinkTo' := 'TIID^Device 1 (EtherCAT)^Term 5 (EK1200)^Term 6 (EK1122-0080)^DRL02-EK0 (EK1101-0080)^DRL02-ECJ0 (EK1122-0080)^Term 109 (EK1101-0080)^FZP LED(EL2004)^Channel 1^Output'}
+    {attribute 'pytmc' := '
+        pv: RIX:CRIX:LED:05
+        io: io
+'}
+FZP_TXAS_LED_01 AT %Q*:BOOL;
+
+
+     {attribute 'TcLinkTo' :='TIID^Device 1 (EtherCAT)^Term 5 (EK1200)^Term 6 (EK1122-0080)^DRL02-EK0 (EK1101-0080)^DRL02-ECJ0 (EK1122-0080)^Term 109 (EK1101-0080)^FZP LED(EL2004)^Channel 2^Output'}
+    {attribute 'pytmc' := '
+        pv: RIX:CRIX:LED:06
+        io: io
+'}
+FZP_TXAS_LED_02 AT %Q*:BOOL;
+
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>
