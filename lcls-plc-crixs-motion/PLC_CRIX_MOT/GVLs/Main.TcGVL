@@ -189,7 +189,7 @@ VAR_GLOBAL
                               .bLimitBackwardEnable := TIIB[Catcher_E4_EL7041]^STM Status^Status^Digital input 1'}
     M39 : DUT_MotionStage := (bPowerSelf:=TRUE, nEnableMode:=ENUM_StageEnableMode.DURING_MOTION); //RCC Z
 
-	(* VLS
+    (* VLS
      // VLS SLIT TOP
     {attribute 'TcLinkTo' := '	.bLimitForwardEnable:=TIIB[VLS_EP6_EP7041-1002]^STM Status^Status^Digital input 1;
                                 .bLimitBackwardEnable:=TIIB[VLS_EP6_EP7041-1002]^STM Status^Status^Digital input 2'}
@@ -270,7 +270,7 @@ VAR_GLOBAL
         field: DESC VLS Camera Translation
     '}
     M47: DUT_MotionStage;
-	*)
+    *)
 
     //Cryo pump
     {attribute 'TcLinkTo' := '	.bLimitForwardEnable:=TIIB[DRL02-E23 (EL7041)]^STM Status^Status^Digital input 2'}
